@@ -4,16 +4,16 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name
-title: Hugo Academic CV Theme
+title: Wang Haocheng - Formal Theorem Proving & LLM Research
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://hcwang942.github.io/'
 
 ############################
 ## LANGUAGE
 ############################
 
 defaultContentLanguage: en
-hasCJKLanguage: false
+hasCJKLanguage: true  # Enable Chinese/Japanese/Korean language support
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
@@ -50,6 +50,12 @@ markup:
   _merge: deep
   highlight:
     lineNos: false
+    # Enable code highlighting style (can be "github", "dracula", etc.)
+    style: "github"
+  # Enable math rendering
+  goldmark:
+    renderer:
+      unsafe: true  # Allow HTML in Markdown for math rendering
 security:
   _merge: deep
 sitemap:
