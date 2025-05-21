@@ -31,7 +31,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:hcwang942[at]gmail.com'
+    url: 'mailto:hcwang942@gmail.com'
     label: Email Me
   - icon: brands/github
     url: https://github.com/hcWang942
