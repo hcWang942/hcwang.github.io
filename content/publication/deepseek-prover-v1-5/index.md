@@ -1,53 +1,39 @@
 ---
-title: 'DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search'
+title: "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search"
 authors:
-  - admin
-  - Qingxing Cao
-  - Xiaohu Lu
-  - Wenda Li
-  - Yuhuai Wu
-  
-author_notes:
-  - "Equal contribution"
-  - "Equal contribution"
-  - ""
-  - ""
-  - ""
-
-date: '2024-08-08T00:00:00Z'
-doi: '10.48550/arXiv.2408.08152'
+- admin
+- DeepSeek AI Research Team
+date: "2024-08-16T00:00:00Z"
+doi: "https://doi.org/10.48550/arXiv.2408.08152"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-08-08T00:00:00Z'
+publishDate: "2024-08-16T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['paper-conference']
+publication_types: ["article"]
 
 # Publication name and optional abbreviated publication name.
-publication: Under review at ICLR 2025
-publication_short: Under review at ICLR 2025
+publication: "arXiv Preprint (Under review at ICLR 2025)"
+publication_short: "arXiv"
 
-abstract: This paper introduces DeepSeek-Prover-V1.5, an advanced large language model (LLM) for mathematical theorem proving with Lean 4. We employ a hybrid approach combining LLMs with Monte-Carlo Tree Search (MCTS) using a novel truncate-and-resume mechanism for proof search. Our method integrates single-pass and multi-pass generation strategies and leverages Reinforcement Learning from Proof Assistant Feedback (RLPAF) using the GRPO algorithm. DeepSeek-Prover-V1.5 achieves state-of-the-art performance of 63.5% on the miniF2F benchmark and 25.3% on ProofNet, significantly outperforming previous approaches.
+abstract: "In this paper, we introduce DeepSeek-Prover-V1.5, a novel hybrid approach combining large language models (LLMs) and Monte-Carlo tree search for automated theorem proving. We design a truncate-and-resume mechanism for proof search that integrates single-pass and multi-pass generation strategies. By implementing reinforcement learning from proof assistant feedback (RLPAF) using the GRPO algorithm, we significantly enhance the model's performance. Our approach achieves state-of-the-art results on benchmark miniF2F (63.5%) and ProofNet (25.3%), surpassing previous approaches by substantial margins."
 
 # Summary. An optional shortened abstract.
-summary: We introduce DeepSeek-Prover-V1.5, a hybrid approach combining LLMs with Monte-Carlo Tree Search for automated theorem proving, achieving state-of-the-art results on miniF2F and ProofNet benchmarks.
+summary: A novel hybrid approach for automated theorem proving that combines LLMs and Monte-Carlo tree search, achieving state-of-the-art results on mathematical reasoning benchmarks.
 
 tags:
-  - Formal Theorem Proving
-  - Large Language Models
-  - Reinforcement Learning
-  - Monte-Carlo Tree Search
+- Formal Theorem Proving
+- Reinforcement Learning
+- Monte-Carlo Tree Search
+- Large Language Models
 
-# Display this page in the Featured widget?
 featured: true
 
-# Custom links (uncomment lines below)
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2408.08152
-
 url_pdf: https://arxiv.org/pdf/2408.08152.pdf
 url_code: ''
 url_dataset: ''
@@ -58,10 +44,10 @@ url_source: ''
 url_video: ''
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
+# To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: ''
-  focal_point: ''
+  caption: 'Image credit: [**DeepSeek AI**](https://deepseek.ai)'
+  focal_point: ""
   preview_only: false
 
 # Associated Projects (optional).
@@ -79,25 +65,27 @@ projects: []
 slides: ""
 ---
 
-## Overview
+DeepSeek-Prover-V1.5 represents a significant advancement in the field of automated theorem proving through the integration of large language models with sophisticated search and learning strategies.
 
-Large language models (LLMs) have demonstrated remarkable capabilities in various reasoning tasks, but their application to formal theorem proving remains challenging. This paper introduces DeepSeek-Prover-V1.5, a specialized model for mathematical theorem proving with the Lean 4 proof assistant.
+## Key Innovations
 
-## Key Contributions
+Our approach introduces several important innovations:
 
-1. **Hybrid Approach**: We combine LLMs with Monte-Carlo Tree Search (MCTS) to enhance theorem proving capabilities.
-2. **Truncate-and-Resume Mechanism**: Our novel proof search mechanism integrates single-pass and multi-pass generation strategies.
-3. **Reinforcement Learning**: We implement Reinforcement Learning from Proof Assistant Feedback (RLPAF) using the GRPO algorithm.
-4. **State-of-the-Art Performance**: DeepSeek-Prover-V1.5 achieves 63.5% on the miniF2F benchmark and 25.3% on ProofNet, significantly outperforming previous approaches.
+1. **Hybrid LLM-MCTS Architecture**: We combine the reasoning capabilities of large language models with the structured search capabilities of Monte-Carlo Tree Search to effectively explore the solution space of mathematical proofs.
 
-## Methodology
+2. **Truncate-and-Resume Mechanism**: Our novel mechanism enables more efficient proof generation by intelligently managing when to continue exploring a proof path and when to try alternative approaches.
 
-Our approach addresses the challenges of long-horizon reasoning in theorem proving by breaking down the process into manageable steps through the truncate-and-resume mechanism. This allows the model to explore different proof paths efficiently while maintaining context awareness.
+3. **Reinforcement Learning from Proof Assistant Feedback (RLPAF)**: By leveraging feedback from formal proof assistants, we train our models to produce more accurate and valid proofs.
 
-The integration of MCTS provides structured exploration of the proof space, while RLPAF refines the model's ability to generate valid proof steps based on feedback from the Lean 4 proof assistant.
+4. **GRPO Algorithm Implementation**: Our implementation of the GRPO algorithm enables more effective training on complex mathematical reasoning tasks.
 
 ## Results
 
-Experimental results demonstrate that DeepSeek-Prover-V1.5 significantly outperforms previous models on both miniF2F and ProofNet benchmarks, establishing a new state-of-the-art in automated theorem proving with LLMs.
+The effectiveness of our approach is demonstrated by state-of-the-art performance on two challenging benchmarks:
 
-Our analysis shows that the combination of MCTS with LLM-based generation and reinforcement learning creates a powerful synergy that enhances the model's capability to tackle complex mathematical proofs.
+- miniF2F: 63.5% success rate
+- ProofNet: 25.3% success rate
+
+These results represent significant improvements over previous approaches, validating the effectiveness of our hybrid methodology for automated theorem proving.
+
+This work is currently under review as a conference paper at ICLR 2025.
